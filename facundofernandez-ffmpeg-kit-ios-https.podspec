@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
     s.name             = 'facundofernandez-ffmpeg-kit-ios-https'
     s.version          = '6.0.2'
     s.summary          = 'FFmpeg iOS Binaries'
-    s.homepage         = 'https://github.com/facundofernandez/ffmpeg'
+    s.homepage         = 'https://github.com/facundofernandez/ffmpeg-kit-ios'
     s.license          = { :type => "LGPL-3.0" }
     s.authors          = 'facundofernandez'
     s.platform         = :ios, '12.1'
