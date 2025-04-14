@@ -11,7 +11,10 @@ Pod::Spec.new do |s|
     s.requires_arc     = true
   
     # Link to the zip file on your GitHub release
-    s.source = { :http => 'https://github.com/facundofernandez/ffmpeg-kit-ios/releases/download/6.0.2/ffmpegkit-ios.xcframework.zip' }
+    s.source = { 
+        :http => 'https://github.com/facundofernandez/ffmpeg-kit-ios/releases/download/6.0.2/ffmpegkit-ios.xcframework.zip', 
+        :type => 'zip' 
+    }
 
     s.libraries = [
         "z",
@@ -26,14 +29,15 @@ Pod::Spec.new do |s|
         "CoreMedia",
         "VideoToolbox"
     ]
-    s.vendored_frameworks = [
-        "ffmpegkit.xcframework",
-        "libavcodec.xcframework",
-        "libavdevice.xcframework",
-        "libavfilter.xcframework",
-        "libavformat.xcframework",
-        "libavutil.xcframework",
-        "libswresample.xcframework",
-        "libswscale.xcframework",
-    ]
+    # s.vendored_frameworks = [
+    #     "ffmpegkit.xcframework",
+    #     "libavcodec.xcframework",
+    #     "libavdevice.xcframework",
+    #     "libavfilter.xcframework",
+    #     "libavformat.xcframework",
+    #     "libavutil.xcframework",
+    #     "libswresample.xcframework",
+    #     "libswscale.xcframework",
+    # ]
+    s.vendored_frameworks = 'ffmpeg-kit-ios-full-gpl/*.xcframework'
 end
