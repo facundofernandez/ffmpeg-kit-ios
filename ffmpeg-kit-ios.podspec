@@ -1,6 +1,6 @@
 
 Pod::Spec.new do |s|
-    s.name             = 'ffmpeg-kit-io'
+    s.name             = 'ffmpeg-kit-ios'
     s.version          = '6.0.2'
     s.summary          = 'FFmpeg iOS Binaries'
     s.homepage         = 'https://github.com/facundofernandez/ffmpeg-kit-ios'
