@@ -1,6 +1,6 @@
 
 Pod::Spec.new do |s|
-    s.name             = 'ffmpeg-kit-ios'
+    s.name             = 'facundofernandez-ffmpeg-kit'
     s.version          = '6.0.2'
     s.summary          = 'FFmpeg iOS Binaries'
     s.homepage         = 'https://github.com/facundofernandez/ffmpeg-kit-ios'
@@ -9,6 +9,9 @@ Pod::Spec.new do |s|
     s.platform         = :ios, '12.1'
     s.static_framework = true
     s.requires_arc     = true
+  
+    # Link to the zip file on your GitHub release
+    s.source       = { :git => "https://github.com/facundofernandez/ffmpeg-kit-ios.git", :tag => "{s.version}" }
 
     s.libraries = [
         "z",
