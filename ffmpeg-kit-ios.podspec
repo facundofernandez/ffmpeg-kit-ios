@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
     s.requires_arc     = true
   
     # Link to the zip file on your GitHub release
-    s.source       = { :git => "https://github.com/facundofernandez/ffmpeg-kit-ios.git", :tag => "6.0.2" }
+    s.source       = { :git => "https://github.com/facundofernandez/ffmpeg-kit-ios.git" }
 
     s.libraries = [
         "z",
